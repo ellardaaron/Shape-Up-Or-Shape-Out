@@ -1,0 +1,13 @@
+#shapeCanvas{
+    overflow: hidden;
+    height: 600px;
+    width: 600px;
+    background-color: brown;
+}
+
+.square {
+    position: absolute;
+    background-color: black;
+
+}
+
