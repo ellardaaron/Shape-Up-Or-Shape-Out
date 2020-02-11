@@ -11,3 +11,13 @@
 
 }
 
+.circle {
+    position: absolute;
+    background-color: blue;
+    border-radius: 50%;
+}
+
+.rectangle{
+    position: absolute;
+    background-color: blueviolet;
+}

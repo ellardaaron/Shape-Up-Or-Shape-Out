@@ -19,11 +19,38 @@ class Square extends Shape {
 
     }
 }
+class Circle extends Shape {
+    constructor (x, y, radius){
+        super(x,y);
+        this.div.classList.add('circle');          // adds a css class 
+        this.div.style.width = `${radius}px`;         //setting the width to the size which is a random number
+        this.div.style.height = `${radius}px`;        
+        container.appendChild(this.div);
+
+    }
+}
+class Rectangle extends Shape {
+    constructor (x,y, recHeight, recWidth){
+        super(x,y);
+        this.div.classList.add('rectangle');
+        this.div.style.height = `${recHeight}px`;
+        this.div.style.width = `${recWidth}px`;
+        container.appendChild(this.div)
+    }
+}
+
 
 //Buttons---------------
 
 let sqButton = document.getElementById('sq-button'); //assigns sqButton to the html button "sq-button"
 sqButton.addEventListener('click', insertSquare);       //adds an event listener that when clicked executes the insert square function
+
+let cirButton = document.getElementById('cir-button');
+cirButton.addEventListener('click', insertCircle); 
+
+let recButton = document.getElementById('rec-button');
+recButton.addEventListener('click', insertRectangle);
+
 
 //Functions-------------
 
@@ -33,6 +60,25 @@ function insertSquare () {
     let yVal = randomVal(0,MAX);
     let size = submitValue;
     let sq = new Square(xVal, yVal, size);
+}
+
+function insertCircle () {
+    var submitValue = document.getElementById("circle-input").value;
+    let xVal = randomVal(0,MAX);  
+    let yVal = randomVal(0,MAX);
+    let radius = submitValue*2;                  // multiply the submit value by 2 because radius is only half of the circumference
+    let cir = new Circle(xVal, yVal, radius);
+}
+
+function insertRectangle () {
+    var heightValue = document.getElementById("rectangle-height-input").value;
+    var widthValue = document.getElementById("rectangle-width-input").value;
+    let xVal = randomVal(0,MAX); 
+    let yVal = randomVal(0,MAX);
+    let recHeight = heightValue;
+    let recWidth = widthValue;
+    let rec = new Rectangle(xVal, yVal, recHeight, recWidth);
+
 }
 
 function randomVal (min,max) {    //a random value function that pics a number between the inserted min and max values

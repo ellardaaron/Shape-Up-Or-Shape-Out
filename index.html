@@ -1,23 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 
-    
+
     <link rel="stylesheet" href="styles.css">
 
 </head>
-<body>
 
-    <input type="text" id="square-input">
-    <input type="submit" id="sq-button" value="Draw Square">
- 
+<body>
+    <div>
+        <input type="text" id="square-input" placeholder="Height and Width">
+        <input type="submit" id="sq-button" value="Draw Square">
+    </div>
+
+    <div>
+        <input type="text" id="circle-input" placeholder="Radius">
+        <input type="submit" id="cir-button" value="Draw Circle">
+    </div>
+
+<div>
+    <input type="text" id="rectangle-height-input" placeholder="Height">
+    <input type="text" id="rectangle-width-input" placeholder="Width">
+    <input type="submit" id="rec-button" value="Draw Rectangle">
+</div>
+
     <div id="shapeCanvas"></div>
 
 
-    <script src = "app.js"></script>
+    <script src="app.js"></script>
 </body>
+
 </html>
