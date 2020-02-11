@@ -1,4 +1,4 @@
-const MAX = 400; //sets the max pixels for the position the the square div will be placed inside the square div
+const MAX = 400; //sets the max pixels for the position the the div will be placed inside the square div
 
 let container = document.getElementById('shapeCanvas'); //sets the variable container to the square container div in the html
 
