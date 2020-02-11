@@ -1,4 +1,4 @@
-const MAX = 400; //sets the max pixels for the position the the div will be placed inside the square div
+const MAX = 600; //sets the max pixels for the position the the div will be placed inside the square div
 
 let container = document.getElementById('shapeCanvas'); //sets the variable container to the square container div in the html
 
@@ -38,6 +38,16 @@ class Rectangle extends Shape {
         container.appendChild(this.div)
     }
 }
+// class Triangle extends Shape {
+//     constructor (x, y, size){
+//         super(x,y);
+//         this.div.classList.add('triangle');         
+//         this.div.style.width= `${size}px`;        
+//         this.div.style.height = `${size}px`;        
+//         container.appendChild(this.div);
+
+//     }
+// }
 
 
 //Buttons---------------
@@ -51,6 +61,8 @@ cirButton.addEventListener('click', insertCircle);
 let recButton = document.getElementById('rec-button');
 recButton.addEventListener('click', insertRectangle);
 
+// let triButton = document.getElementById('tri-button'); 
+// triButton.addEventListener('click', insertTriangle);       
 
 //Functions-------------
 
@@ -81,8 +93,17 @@ function insertRectangle () {
 
 }
 
+// function insertTriangle () {
+//     var submitValue = document.getElementById("triangle-input").value;
+//     let xVal = randomVal(0,MAX);  //calls on randomVal function. picks a number from 0-800 because MAX is set to 800 px
+//     let yVal = randomVal(0,MAX);
+//     let size = submitValue;
+//     let tri = new Triangle(xVal, yVal, size);
+// }
+
+
 function randomVal (min,max) {    //a random value function that pics a number between the inserted min and max values
-    return Math.floor(Math.random() * (max - min)) + min;
+    return Math.floor(Math.random() * (max - min));
 }
 
 
