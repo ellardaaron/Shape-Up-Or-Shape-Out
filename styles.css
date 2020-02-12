@@ -2,29 +2,43 @@
     position: relative;
     height: 600px;
     width: 600px;
-    background-color: black;
+    background-color: #526760;
 }
 
 .square {
     position: absolute;
-    background-color: red;
+    background-color: palevioletred;
 
 }
 
 .circle {
     position: absolute;
-    background-color: purple;
+    background-color: mediumpurple;
     border-radius: 50%;
 }
 
 .rectangle{
     position: absolute;
-    background-color: green;
+    background-color: palegreen;
 }
 
 .triangle{
     position: absolute;
 
 
+}
+
+body {
+    background-color: cornflowerblue;
+}
+
+#stats {
+    background-color: darkgray;
+    padding-top:15px;
+    padding-bottom: 15px;
+}
+
+#shape-name{
+    text-transform: capitalize;
 }
 

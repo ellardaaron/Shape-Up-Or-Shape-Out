@@ -93,7 +93,7 @@ class Triangle extends Shape {
     constructor (x, y, size){
         super(x,y);
         this.div.classList.add('triangle');         
-        this.div.style.borderBottom= `${size}px solid yellow`;        
+        this.div.style.borderBottom= `${size}px solid rgb(253, 237, 91)`;        
         this.div.style.borderRight = `${size}px solid transparent`;        
 
         this.div.addEventListener ('click', () => {

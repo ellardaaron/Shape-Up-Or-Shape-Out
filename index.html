@@ -15,61 +15,109 @@
 
 <body>
 
-    <div class="container">
-        
+    <div id="input-fields" class="container" style="margin: 0px;" ;>
+
         <div class="row">
-            <div class="col"> <input type="text" id="square-input" placeholder="Height and Width"> </div>
+            <div class="col-5"> <input type="text" id="square-input" placeholder="Height and Width"> </div>
             <div class="col"> <input type="submit" id="sq-button" value="Draw Square"> </div>
         </div>
-       
+
         <div class="row">
-            <div class="col"> <input type="text" id="circle-input" placeholder="Radius"> </div>
+            <div class="col-5"> <input type="text" id="circle-input" placeholder="Radius"> </div>
             <div class="col"> <input type="submit" id="cir-button" value="Draw Circle"></div>
         </div>
-        
+
         <div class="row">
-            <div class="col"> <input type="text" id="rectangle-height-input" placeholder="Height"> <input type="text" id="rectangle-width-input" placeholder="Width"> </div>
+            <div class="col-5"> <input type="text" id="rectangle-height-input" placeholder="Height"> <input type="text"
+                    id="rectangle-width-input" placeholder="Width"> </div>
             <div class="col"> <input type="submit" id="rec-button" value="Draw Rectangle"> </div>
         </div>
 
         <div class="row">
-            <div class="col"> <input type="text" id="triangle-input" placeholder="Height and Width"> </div>
+            <div class="col-5"> <input type="text" id="triangle-input" placeholder="Height and Width"> </div>
             <div class="col"> <input type="submit" id="tri-button" value="Draw Triangle"> </div>
-          </div>
+        </div>
     </div>
 
-    
-    <div id="shape-canvas"></div>
+    <br>
+
+    <div class="container" style="margin: 0px; padding: 0px;">
+        <div class="row">
+
+            <div class="col">
+                <div id="shape-canvas"> </div>
+            </div>
+
+            <div class="col">
 
 
-    <div id="stats">
+                <div id="stats" class="container">
 
-        <div id="shape">
-            Shape Name <input type="text" id="shape-name" placeholder="Shape Name">
-        </div>
 
-        <div id="width">
-            Width <input type="text" id="width-info" placeholder="Width">
-        </div>
+                    <div class="row">
+                        <div class="col">
+                            Shape Name
+                        </div>
+                        <div class="col" id="shape">
+                            <input type="text" id="shape-name" placeholder="Shape Name">
 
-        <div id="height">
-            Height <input type="text" id="height-info" placeholder="Height">
-        </div>
+                        </div>
 
-        <div id="radius">
-            Radius <input type="text" id="radius-info" placeholder="Radius">
-        </div>
+                    </div>
 
-        <div id="area">
-            Area <input type="text" id="area-info" placeholder="Area">
-        </div>
+                    <div class="row">
+                        <div class="col">
+                            Width
+                        </div>
+                        <div class="col" id="width">
+                            <input type="text" id="width-info" placeholder="Width">
+                        </div>
+                    </div>
 
-        <div id="perimeter">
-            Perimeter <input type="text" id="perimeter-info" placeholder="Perimeter">
+                    <div class="row">
+                        <div class="col">
+                            Height
+                        </div>
+                        <div class="col" id="height">
+                            <input type="text" id="height-info" placeholder="Height">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            Radius
+                        </div>
+                        <div class="col" id="radius">
+                            <input type="text" id="radius-info" placeholder="Radius">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            Area
+                        </div>
+                        <div class="col" id="area">
+                            <input type="text" id="area-info" placeholder="Area">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            Perimeter
+                        </div>
+                        <div class="col" id="perimeter">
+                            <input type="text" id="perimeter-info" placeholder="Perimeter">
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
         </div>
 
     </div>
-
 
     <script src="app.js"></script>
 
