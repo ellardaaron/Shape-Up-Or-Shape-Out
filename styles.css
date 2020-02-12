@@ -1,25 +1,25 @@
-#shapeCanvas{
+#shape-canvas{
     position: relative;
     height: 600px;
     width: 600px;
-    background-color: brown;
+    background-color: black;
 }
 
 .square {
     position: absolute;
-    background-color: black;
+    background-color: red;
 
 }
 
 .circle {
     position: absolute;
-    background-color: blue;
+    background-color: purple;
     border-radius: 50%;
 }
 
 .rectangle{
     position: absolute;
-    background-color: blueviolet;
+    background-color: green;
 }
 
 .triangle{
@@ -27,3 +27,4 @@
 
 
 }
+

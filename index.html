@@ -7,65 +7,81 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
 
 </head>
 
 <body>
-    <div>
-        <input type="text" id="square-input" placeholder="Height and Width">
-        <input type="submit" id="sq-button" value="Draw Square">
+
+    <div class="container">
+        
+        <div class="row">
+            <div class="col"> <input type="text" id="square-input" placeholder="Height and Width"> </div>
+            <div class="col"> <input type="submit" id="sq-button" value="Draw Square"> </div>
+        </div>
+       
+        <div class="row">
+            <div class="col"> <input type="text" id="circle-input" placeholder="Radius"> </div>
+            <div class="col"> <input type="submit" id="cir-button" value="Draw Circle"></div>
+        </div>
+        
+        <div class="row">
+            <div class="col"> <input type="text" id="rectangle-height-input" placeholder="Height"> <input type="text" id="rectangle-width-input" placeholder="Width"> </div>
+            <div class="col"> <input type="submit" id="rec-button" value="Draw Rectangle"> </div>
+        </div>
+
+        <div class="row">
+            <div class="col"> <input type="text" id="triangle-input" placeholder="Height and Width"> </div>
+            <div class="col"> <input type="submit" id="tri-button" value="Draw Triangle"> </div>
+          </div>
     </div>
 
-    <div>
-        <input type="text" id="circle-input" placeholder="Radius">
-        <input type="submit" id="cir-button" value="Draw Circle">
+    
+    <div id="shape-canvas"></div>
+
+
+    <div id="stats">
+
+        <div id="shape">
+            Shape Name <input type="text" id="shape-name" placeholder="Shape Name">
+        </div>
+
+        <div id="width">
+            Width <input type="text" id="width-info" placeholder="Width">
+        </div>
+
+        <div id="height">
+            Height <input type="text" id="height-info" placeholder="Height">
+        </div>
+
+        <div id="radius">
+            Radius <input type="text" id="radius-info" placeholder="Radius">
+        </div>
+
+        <div id="area">
+            Area <input type="text" id="area-info" placeholder="Area">
+        </div>
+
+        <div id="perimeter">
+            Perimeter <input type="text" id="perimeter-info" placeholder="Perimeter">
+        </div>
+
     </div>
-
-    <div>
-        <input type="text" id="rectangle-height-input" placeholder="Height">
-        <input type="text" id="rectangle-width-input" placeholder="Width">
-        <input type="submit" id="rec-button" value="Draw Rectangle">
-    </div>
-
-    <div>
-        <input type="text" id="triangle-input" placeholder="Height and Width">
-        <input type="submit" id="tri-button" value="Draw Triangle">
-    </div>
-
-<div id="shapeCanvas"></div>
-
-<div id = "stats">
-
-    <div id = "shape">
-        Shape Name <input type="text" id="shape-name" placeholder="Shape Name">
-    </div>
-
-    <div id = "width">
-        Width <input type="text" id="width-info" placeholder="Width">
-    </div>
-
-    <div id = "height">
-        Height <input type="text" id="height-info" placeholder="Height">
-    </div>
-
-    <div id = "radius">
-       Radius <input type="text" id="radius-info" placeholder="Radius">
-    </div>
-
-    <div id = "area">
-       Area <input type="text" id="area-info" placeholder="Area">
-    </div>
-
-    <div id = "parameter">
-       Parameter <input type="text" id="parameter-info" placeholder="Parameter">
-    </div>
-
-</div>
 
 
     <script src="app.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
